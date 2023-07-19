@@ -10,7 +10,7 @@ const defaultProps = {
     clear: () => '\u00d7'
 }
 
-const AutocompleteText = ({ songs }) => {
+const AutocompleteText = ({ items }) => {
 
     const [query, setQuery] = useState('')
     const [list, setList] = useState([])
@@ -21,7 +21,7 @@ const AutocompleteText = ({ songs }) => {
 
     }
     useEffect(() => {
-        query ? setList(songs.filter(ele => ele.toLowerCase().startsWith(query.toLowerCase())
+        query ? setList(items.filter(ele => ele.toLowerCase().startsWith(query.toLowerCase())
             || ele.toLowerCase().endsWith(query.toLowerCase())
             || ele.toLowerCase().includes(query.toLowerCase())))
             : setList([])

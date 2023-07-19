@@ -2,10 +2,10 @@
 import AutocompleteText from './autocomplete/AutocompleteText'
 
 function App() {
-  const songs = ["Better", "Cruel", "LetMe", "LetMeLove", "Outside", "Pillowtalk", "She", "SheDontLoveMe", "Trampoline", "Vibez"]
+  const items = []
   return (
     <>
-      <AutocompleteText songs={songs} />
+      <AutocompleteText items={items} />
     </>
   )
 }
