@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autosuggest-input-box": "^3.0.2",
+    "autosuggestion": "^1.1.5",
+    "axios": "^1.4.0",
     "react": "^18.2.0",
+    "react-autosuggest": "^10.1.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

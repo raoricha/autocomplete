@@ -1,11 +1,16 @@
+import './App.css'
+import Suggestion from "./Suggestion"
+import Search from "./Search"
 
-import AutocompleteText from './autocomplete/AutocompleteText'
 
 function App() {
-  const items = []
   return (
     <>
-      <AutocompleteText items={items} />
+      <h1>Search Box</h1>
+      <br />
+      <Search />
+      <br />
+      <Suggestion />
     </>
   )
 }
